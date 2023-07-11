@@ -1,0 +1,57 @@
+<!-- Module code: CS5002 -->
+<!-- Module: Programming Principles and Practice -->
+<!-- Creating Tables and Options for Data Analysis of Songs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="songs.css" />
+    <title>Top 500 Songs of All Time</title>
+    <script src="songs.js"></script>
+  </head>
+
+  <body>
+    <h1>Rolling Stone's Top 500 Songs of All Time</h1>
+
+    <div class="filterContainer">
+      <label for="selectYearStart">Please select a start year: </label>
+      <select id="selectYearStart" class="dropdown">
+        <!-- Insert years as options here -->
+      </select>
+      <label for="selectYearEnd">Please select an end year: </label>
+      <select id="selectYearEnd" class="dropdown">
+        <!-- Insert years as options here --></select
+      ><br />
+      <label for="selectArtist">Please enter an artist name: </label>
+      <input
+        type="text"
+        id="selectArtist"
+        class="textInput"
+        name="selectArtist"
+      />
+      <label for="selectTitle">Please enter part of the song title: </label>
+      <input
+        type="text"
+        id="selectTitle"
+        class="textInput"
+        name="selectTitle"
+      />
+
+      <input type="button" onclick="updateTable()" value="Update Table" />
+      <input type="button" onclick="showAllSongs()" value="Show All Songs" />
+    </div>
+
+    <table id="songTable">
+      <tbody>
+        <tr>
+          <th>Rank</th>
+          <th>Title</th>
+          <th>Artist</th>
+          <th>Album</th>
+          <th>Year</th>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+/* Module code: CS5002 */
+/* Module: Programming Principles and Practice */
+/* Adding CSS Elements to HTML song analysis website */
+
+/* Add colour and margin to button */
+input[type="button"] {
+  width: 120px;
+  margin-bottom: 10px;
+  background-color: #ff992c;
+}
+
+/* Update table design with border and colour */
+#songTable {
+  border: 1px solid #ced4da;
+}
+
+/* Add colours to the table */
+th {
+  padding: 5px;
+  border: 1px solid #000000;
+  text-align: center;
+  color: #ffffff;
+  background: #ff992c;
+}
+tr:nth-child(even) {
+  text-align: center;
+  color: #ffa500;
+  background: #ffffff;
+}
+tr:nth-child(odd) {
+  text-align: center;
+  color: #b7a189;
+  background: #ffffff;
+}
+td {
+  border: 1px solid #000000;
+}
+
+/* Design input fields */
+.dropdown {
+  padding: 5px;
+  border-radius: 10px;
+  max-width: 200px;
+}
+
+.textInput {
+  padding: 5px;
+  border-radius: 10px;
+  max-width: 150px;
+  margin: 10px;
+}
